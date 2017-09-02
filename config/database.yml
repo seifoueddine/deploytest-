@@ -1,11 +1,12 @@
+
 production:
   <<: *default
-  database: deploy
+  database: deploy_test
 
 development:
   sessions:
     default:
-      database: deploy
+      database: deploy_test
       hosts:
         - localhost:27017
       options:
@@ -19,7 +20,7 @@ development:
 test:
   sessions:
     default:
-      database: deploy
+      database: testapp_test
       hosts:
         - localhost:27017
       options:
@@ -30,6 +31,6 @@ test:
 development:
   sessions:
     default:
-      database: deploy
+      database: deploy_test
       hosts:
         - localhost:27017
